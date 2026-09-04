@@ -18,7 +18,8 @@ Paseo plugins are trusted, unsandboxed code. Review the source before installing
 host.
 
 ```bash
-cd /home/omer/paseo-plugins/paseo-dracula
+git clone https://github.com/omercnet/paseo-dracula.git
+cd paseo-dracula
 bun install --frozen-lockfile
 paseo plugin install "$PWD"
 ```
