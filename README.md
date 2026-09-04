@@ -39,8 +39,16 @@ and UI palette.
 | `control` | Selection | `#44475A` |
 | `border` | Background Lighter | `#424450` |
 | `accent` | Purple | `#BD93F9` |
-| `mutedForeground` | Comment / Current Line | `#6272A4` |
+| `mutedForeground` | Foreground | `#F8F8F2` |
 | `ring` | Current Line / Comment | `#6272A4` |
+
+Paseo uses `mutedForeground` for normal-sized metadata and interactive control labels, including
+task progress and model selection. Dracula's
+[official editor manifest](https://github.com/dracula/visual-studio-code/blob/main/src/dracula.yml)
+likewise uses Foreground for buttons, badges, and dropdown text, while reserving Comment for
+placeholders and inactive items.
+Using Comment here would provide only a 2.51:1 contrast ratio on Background Light; Foreground
+provides 11.06:1 and satisfies the official specification's 4.5:1 minimum.
 
 Paseo 0.7 accepts only these eight seed fields. Derived terminal, syntax, status, diff, and other UI
 colors are owned by Paseo rather than duplicated in this plugin.

@@ -12,7 +12,7 @@ export default function contribute(plugin: PluginContext) {
       control: "#44475A",
       border: "#424450",
       accent: "#BD93F9",
-      mutedForeground: "#6272A4",
+      mutedForeground: "#F8F8F2",
       ring: "#6272A4",
     },
   });
