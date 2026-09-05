@@ -2,7 +2,7 @@
   "name": "@omercnet/paseo-dracula",
   "version": "0.1.0",
   "type": "module",
-  "description": "Dracula Classic theme for Paseo.",
+  "description": "Dracula Classic and Alucard Classic themes for Paseo.",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -27,6 +27,7 @@
     "paseo-plugin.json",
     "README.md",
     "screenshot.png",
+    "screenshot-alucard.png",
     "LICENSE"
   ],
   "scripts": {

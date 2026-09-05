@@ -17,5 +17,21 @@ export default function contribute(plugin: PluginContext) {
     },
   });
 
+  plugin.addTheme({
+    id: "paseo-alucard",
+    name: "Alucard",
+    appearance: "light",
+    colors: {
+      background: "#FFFBEB",
+      foreground: "#1F1F1F",
+      raised: "#EFEDDC",
+      control: "#CFCFDE",
+      border: "#ECE9DF",
+      accent: "#644AC9",
+      mutedForeground: "#1F1F1F",
+      ring: "#6C664B",
+    },
+  });
+
   return () => {};
 }

@@ -11,12 +11,12 @@ Install the latest release from the public repository:
 paseo plugin add omercnet/paseo-dracula
 ```
 
-#### Activate the theme
+#### Activate a theme
 
 1. Open **Settings → Appearance**.
-2. Set **Theme** to **Dracula**.
-3. Optionally set **Highlight theme** to **Dracula** for matching code syntax colors. Paseo manages
-   syntax highlighting separately from app themes.
+2. Set **Theme** to **Dracula** for the dark variant or **Alucard** for the light variant.
+3. Syntax highlighting is configured separately. For Dracula, optionally set **Highlight theme**
+   to **Dracula**. For Alucard, select one of Paseo's light-capable highlight themes.
 
 #### Update
 

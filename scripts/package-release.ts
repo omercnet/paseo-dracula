@@ -10,6 +10,7 @@ const releaseFiles = [
   "INSTALL.md",
   "README.md",
   "screenshot.png",
+  "screenshot-alucard.png",
   "index.ts",
   "package.json",
   "paseo-plugin.json",

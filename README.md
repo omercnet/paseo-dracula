@@ -1,53 +1,62 @@
 # Dracula for [Paseo](https://paseo.sh)
 
-> A Dracula Classic app theme for Paseo.
+> Dracula Classic and Alucard Classic app themes for Paseo.
 
-![Dracula theme selected in Paseo Appearance settings](./screenshot.png)
+![Dracula Classic selected in Paseo Appearance settings](./screenshot.png)
+
+![Alucard Classic selected in Paseo Appearance settings](./screenshot-alucard.png)
 
 ## Install
 
 See [INSTALL.md](./INSTALL.md) for Git installation, activation, updates, removal, and local
 development installation.
 
-## Theme
+## Themes
 
-This is a minimal, data-only [Dracula Classic](https://draculatheme.com/spec) theme plugin. It
-registers one dark theme and no surfaces, commands, RPCs, filesystem access, process access, or
-network behavior.
+This minimal, data-only plugin contributes both variants defined by the
+[official Dracula specification](https://draculatheme.com/spec):
 
-Paseo expands the contributed seed colors into app surfaces, panels, menus, diffs, status colors,
-terminal colors, focus treatment, and shadows. Syntax highlighting is a separate Paseo preference;
-select **Dracula** under **Settings → Appearance → Highlight theme** for matching code colors.
+- **Dracula**: the original dark theme.
+- **Alucard**: the complementary light theme.
+
+The plugin registers no surfaces, commands, RPCs, filesystem access, process access, or network
+behavior.
+
+Paseo expands each contributed seed palette into app surfaces, panels, menus, diffs, status colors,
+terminal colors, focus treatment, and shadows. Syntax highlighting is a separate Paseo preference.
+For Dracula, select **Dracula** under **Settings → Appearance → Highlight theme** for matching code
+colors. For Alucard, use one of Paseo's light-capable syntax themes.
 
 ## Requirements and limits
 
 - Requires Paseo 0.7.2 or later.
-- Paseo 0.7 accepts eight contributed-theme seeds. Derived terminal, status, diff, and other UI
-  colors remain owned by Paseo.
+- Paseo 0.7 accepts eight contributed-theme seeds per variant. Derived terminal, status, diff, and
+  other UI colors remain owned by Paseo.
 - The plugin contains no daemon-side behavior and does not read or change application state.
 
 ## Palette mapping
 
-Every Paseo contributed-theme seed is set explicitly from the official Dracula Classic palette and
-UI palette.
+Every contributed seed is set explicitly from the official Dracula Classic and Alucard Classic
+palette or UI palette.
 
-| Paseo seed | Dracula token | Value |
-| --- | --- | --- |
-| `background` | Background | `#282A36` |
-| `foreground` | Foreground | `#F8F8F2` |
-| `raised` | Floating interactive elements / Background Light | `#343746` |
-| `control` | Selection | `#44475A` |
-| `border` | Background Lighter | `#424450` |
-| `accent` | Purple | `#BD93F9` |
-| `mutedForeground` | Foreground | `#F8F8F2` |
-| `ring` | Current Line / Comment | `#6272A4` |
+| Paseo seed | Dracula Classic | Alucard Classic | Official role |
+| --- | --- | --- | --- |
+| `background` | `#282A36` | `#FFFBEB` | Background |
+| `foreground` | `#F8F8F2` | `#1F1F1F` | Foreground |
+| `raised` | `#343746` | `#EFEDDC` | Floating interactive elements |
+| `control` | `#44475A` | `#CFCFDE` | Selection |
+| `border` | `#424450` | `#ECE9DF` | Background Lighter |
+| `accent` | `#BD93F9` | `#644AC9` | Purple |
+| `mutedForeground` | `#F8F8F2` | `#1F1F1F` | Foreground |
+| `ring` | `#6272A4` | `#6C664B` | Current Line / Comment |
 
 Paseo uses `mutedForeground` for normal-sized metadata and interactive control labels, including
 task progress and model selection. Dracula's
 [official editor manifest](https://github.com/dracula/visual-studio-code/blob/main/src/dracula.yml)
 likewise uses Foreground for buttons, badges, and dropdown text, while reserving Comment for
-placeholders and inactive items. Comment would provide only a 2.51:1 contrast ratio on Background
-Light; Foreground provides 11.06:1 and satisfies the official specification's 4.5:1 minimum.
+placeholders and inactive items. On Paseo control surfaces, the respective Comment colors provide
+only 1.94:1 and 3.75:1 contrast; the Foreground colors provide 8.59:1 and 10.70:1 and satisfy the
+official specification's 4.5:1 minimum.
 
 ## Develop
 
