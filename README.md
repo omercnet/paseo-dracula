@@ -1,35 +1,35 @@
-# Dracula for Paseo
+# Dracula for [Paseo](https://paseo.sh)
 
-A minimal, data-only [Dracula Classic](https://draculatheme.com/spec) theme plugin for Paseo.
-It registers one dark theme and no other surfaces, commands, RPCs, filesystem access, process access,
-or network behavior.
+> A Dracula Classic app theme for Paseo.
 
-Paseo expands the eight contributed seed colors into its full theme: app surfaces, panels, menus,
-diffs, status colors, syntax colors, terminal colors, focus treatment, and shadows.
+![Dracula theme selected in Paseo Appearance settings](./screenshot.png)
 
-## Requirements
+## Install
 
-- Paseo 0.7.x. The plugin targets the 0.7.2 plugin SDK.
-- Bun 1.4.0 or newer to install development dependencies from a checkout.
+See [INSTALL.md](./INSTALL.md) for Git installation, activation, updates, removal, and local
+development installation.
 
-## Install locally
+## Theme
 
-Paseo plugins are trusted, unsandboxed code. Review the source before installing it on the daemon
-host.
+This is a minimal, data-only [Dracula Classic](https://draculatheme.com/spec) theme plugin. It
+registers one dark theme and no surfaces, commands, RPCs, filesystem access, process access, or
+network behavior.
 
-```bash
-git clone https://github.com/omercnet/paseo-dracula.git
-cd paseo-dracula
-bun install --frozen-lockfile
-paseo plugin install "$PWD"
-```
+Paseo expands the contributed seed colors into app surfaces, panels, menus, diffs, status colors,
+terminal colors, focus treatment, and shadows. Syntax highlighting is a separate Paseo preference;
+select **Dracula** under **Settings → Appearance → Highlight theme** for matching code colors.
 
-Open **Settings → Appearance** and select **Dracula**.
+## Requirements and limits
+
+- Requires Paseo 0.7.2 or later.
+- Paseo 0.7 accepts eight contributed-theme seeds. Derived terminal, status, diff, and other UI
+  colors remain owned by Paseo.
+- The plugin contains no daemon-side behavior and does not read or change application state.
 
 ## Palette mapping
 
-Every Paseo 0.7 contributed-theme seed is set explicitly from the official Dracula Classic palette
-and UI palette.
+Every Paseo contributed-theme seed is set explicitly from the official Dracula Classic palette and
+UI palette.
 
 | Paseo seed | Dracula token | Value |
 | --- | --- | --- |
@@ -46,12 +46,8 @@ Paseo uses `mutedForeground` for normal-sized metadata and interactive control l
 task progress and model selection. Dracula's
 [official editor manifest](https://github.com/dracula/visual-studio-code/blob/main/src/dracula.yml)
 likewise uses Foreground for buttons, badges, and dropdown text, while reserving Comment for
-placeholders and inactive items.
-Using Comment here would provide only a 2.51:1 contrast ratio on Background Light; Foreground
-provides 11.06:1 and satisfies the official specification's 4.5:1 minimum.
-
-Paseo 0.7 accepts only these eight seed fields. Derived terminal, syntax, status, diff, and other UI
-colors are owned by Paseo rather than duplicated in this plugin.
+placeholders and inactive items. Comment would provide only a 2.51:1 contrast ratio on Background
+Light; Foreground provides 11.06:1 and satisfies the official specification's 4.5:1 minimum.
 
 ## Develop
 
@@ -68,8 +64,24 @@ paseo plugin install /absolute/path/to/paseo-dracula
 Release Please maintains versions, changelog entries, tags, and GitHub releases from Conventional
 Commits. Each release archive contains the complete installable plugin source.
 
-## Credits
+## Team
 
-The palette and token names come from the
-[official Dracula Theme specification](https://draculatheme.com/spec), maintained by the Dracula
-Theme contributors. This Paseo plugin is released under the [MIT License](LICENSE).
+This theme is maintained by the following person and a group of
+[contributors](https://github.com/omercnet/paseo-dracula/graphs/contributors).
+
+| [![Omer Cohen](https://github.com/omercnet.png?size=100)](https://github.com/omercnet) |
+| --- |
+| [Omer Cohen](https://github.com/omercnet) |
+
+## Community
+
+- [Dracula Theme](https://draculatheme.com) - Official themes and documentation.
+- [GitHub Discussions](https://github.com/dracula/dracula-theme/discussions) - Questions and theme
+  discussions.
+- [Discord](https://draculatheme.com/discord-invite) - Dracula community chat.
+- [Paseo Discord](https://discord.gg/zQAGHFpD8T) - Paseo community support.
+
+## License
+
+[MIT License](./LICENSE). Palette values and token names come from the
+[official Dracula Theme specification](https://draculatheme.com/spec).
