@@ -6,6 +6,13 @@
 
 * Migrate the plugin to Paseo 0.8 runtime entries and require Paseo ^0.8.0.
 
+## [0.2.1](https://github.com/omercnet/paseo-dracula/compare/v0.2.0...v0.2.1) (2026-09-08)
+
+
+### Bug Fixes
+
+* **plugin:** migrate Dracula to Paseo 0.8 ([#3](https://github.com/omercnet/paseo-dracula/issues/3)) ([cd2e463](https://github.com/omercnet/paseo-dracula/commit/cd2e463043ed02a07f37c05018be213ba0d474cb))
+
 ## [0.2.0](https://github.com/omercnet/paseo-dracula/compare/v0.1.0...v0.2.0) (2026-09-05)
 
 
