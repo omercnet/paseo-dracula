@@ -1,19 +1,19 @@
 import { describe, expect, test } from "bun:test";
-import type { PluginContext } from "@getpaseo/plugin";
-import contribute from "../index";
+import type { PluginClientContext } from "@getpaseo/plugin/client";
+import contribute from "../index.client";
 
-type ThemeDefinition = Parameters<PluginContext["addTheme"]>[0];
+type ThemeDefinition = Parameters<PluginClientContext["addTheme"]>[0];
 
 describe("Dracula theme contributions", () => {
   test("registers both exact classic variants and returns callable cleanup", () => {
     const registrations: ThemeDefinition[] = [];
-    const plugin = {
+    const client = {
       addTheme(theme: ThemeDefinition) {
         registrations.push(theme);
       },
-    } as unknown as PluginContext;
+    } as unknown as PluginClientContext;
 
-    const cleanup = contribute(plugin);
+    const cleanup = contribute(client);
 
     expect(registrations).toEqual([
       {

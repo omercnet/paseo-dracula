@@ -29,9 +29,7 @@ colors. For Alucard, use one of Paseo's light-capable syntax themes.
 
 ## Requirements and limits
 
-- Requires Paseo 0.7.2 or later.
-- Paseo 0.7 accepts eight contributed-theme seeds per variant. Derived terminal, status, diff, and
-  other UI colors remain owned by Paseo.
+- Requires Paseo 0.8.x, including compatible 0.8 prereleases.
 - The plugin contains no daemon-side behavior and does not read or change application state.
 
 ## Palette mapping

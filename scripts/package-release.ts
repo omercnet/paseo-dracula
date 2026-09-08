@@ -11,7 +11,7 @@ const releaseFiles = [
   "README.md",
   "screenshot.png",
   "screenshot-alucard.png",
-  "index.ts",
+  "index.client.ts",
   "package.json",
   "paseo-plugin.json",
   "tsconfig.json",

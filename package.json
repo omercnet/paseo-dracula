@@ -23,7 +23,7 @@
     "bun.lock",
     "CHANGELOG.md",
     "INSTALL.md",
-    "index.ts",
+    "index.client.ts",
     "paseo-plugin.json",
     "README.md",
     "screenshot.png",
@@ -40,7 +40,9 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.10",
-    "@getpaseo/plugin": "^0.7.2",
+    "@getpaseo/client": "0.8.0-beta.1",
+    "@getpaseo/plugin": "0.8.0-beta.1",
+    "@getpaseo/protocol": "0.8.0-beta.1",
     "@types/bun": "^1.4.0",
     "fflate": "^0.8.3",
     "typescript": "^5.9.3"
