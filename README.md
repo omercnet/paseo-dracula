@@ -1,5 +1,15 @@
 # Dracula for [Paseo](https://paseo.sh)
 
+> [!IMPORTANT]
+> This repository is archived. Development moved to
+> [`omercnet/paseo-plugins/paseo-dracula`](https://github.com/omercnet/paseo-plugins/tree/main/paseo-dracula).
+> Existing Paseo Git installations remain on this repository. Migrate with:
+>
+> ```bash
+> paseo plugin remove paseo-dracula
+> paseo plugin add omercnet/paseo-plugins:paseo-dracula
+> ```
+
 > Dracula Classic and Alucard Classic app themes for Paseo.
 
 ![Dracula Classic selected in Paseo Appearance settings](./screenshot.png)
